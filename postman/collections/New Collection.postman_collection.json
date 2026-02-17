@@ -1,0 +1,329 @@
+{
+  "info": {
+    "_postman_id": "1bb0bd05-f203-4b03-9790-496e909139bc",
+    "name": "Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delete Task",
+      "id": "86fdbb0a-3521-4c9c-a553-66e27c25ed41",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "uuid": "045c4e6c-268f-4bd3-8ae6-c3aaad42c6bb"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Test name\",\r\n    \"description\":\"Test description\",\r\n    \"status\":\"IN_PROGRESS\",\r\n    \"dueDate\":\"2027-02-17\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Task",
+      "id": "8a01bd7d-e21a-4e48-9f0e-809072c228d4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "uuid": "045c4e6c-268f-4bd3-8ae6-c3aaad42c6bb"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Test name\",\r\n    \"description\":\"Test description\",\r\n    \"status\":\"IN_PROGRESS\",\r\n    \"dueDate\":\"2027-02-17\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Projects Summary",
+      "id": "df836940-3053-4b42-813b-0dd1fe6101c3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Test name\",\r\n    \"description\":\"Test description\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects/summary",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Project",
+      "id": "fac4cd86-ac08-4572-adcd-d9bd1ef2e4b5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Projects",
+      "id": "ee1d6d97-cf48-4a2a-a476-abc138e66303",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Test name\",\r\n    \"description\":\"Test description\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Project with ID",
+      "id": "ef5eb216-ac6b-4485-9d5d-436bf70ba494",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Test name\",\r\n    \"description\":\"Test description\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Tasks",
+      "id": "83b3ead9-8926-43da-a3a5-42ebf43a7fbe",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Test name\",\r\n    \"description\":\"Test description\",\r\n    \"status\":\"TO_DO\",\r\n    \"dueDate\":\"2027-02-17\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects/1/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects",
+            "1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get task with Project ID",
+      "id": "72b039c0-f760-4b41-9dae-1d0644d09f4f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Test name\",\r\n    \"description\":\"Test description\",\r\n    \"status\":\"TO_DO\",\r\n    \"dueDate\":\"2027-02-17\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects/1/tasks?page=0&size=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects",
+            "1",
+            "tasks"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "0",
+              "uuid": "72e18e1e-db4d-4aae-af8e-27b4ded0f98a"
+            },
+            {
+              "key": "size",
+              "value": "10",
+              "uuid": "0520b74e-e0a9-45fb-a45f-c91a4021bbe8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/projects/1/tasks",
+      "id": "d03b8157-0e64-45ad-9443-1eb281a3edc4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Test name\",\r\n    \"description\":\"Test description\",\r\n    \"status\":\"TO_DO\",\r\n    \"dueDate\":\"2027-02-17\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/projects/1/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "projects",
+            "1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
