@@ -1,7 +1,6 @@
 package com.kcb.test.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.kcb.test.TaskStatus;
 import jakarta.persistence.*;
 import lombok.*;

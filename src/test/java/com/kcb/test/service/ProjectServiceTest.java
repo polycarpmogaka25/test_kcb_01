@@ -1,7 +1,6 @@
 package com.kcb.test.service;
 
 import com.kcb.test.TaskStatus;
-import com.kcb.test.dto.ProjectSummaryDTO;
 import com.kcb.test.entity.Project;
 import com.kcb.test.entity.Task;
 import com.kcb.test.exception.ResourceNotFoundException;
@@ -15,13 +14,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -88,8 +84,6 @@ class ProjectServiceTest {
         var summary = result.getFirst();
 
         Assertions.assertEquals("Alpha Project", summary.getProjectName());
-
-        var counts = summary.getTaskCountByStatus();
 
         verify(projectRepository, times(1)).findAll();
     }
