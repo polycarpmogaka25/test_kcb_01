@@ -1,4 +1,4 @@
-package com.kcb.test.service;
+package com.kcb.test.service.impl;
 
 import com.kcb.test.TaskStatus;
 import com.kcb.test.dto.CreateTaskRequest;
@@ -6,17 +6,17 @@ import com.kcb.test.entity.Task;
 import com.kcb.test.exception.ResourceNotFoundException;
 import com.kcb.test.repository.ProjectRepository;
 import com.kcb.test.repository.TaskRepository;
+import com.kcb.test.service.ServiceTask;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
 @Service
 @RequiredArgsConstructor
-public class TaskService implements ServiceTask {
+public class TaskServiceImpl implements ServiceTask {
 
     private final TaskRepository taskRepository;
     private final ProjectRepository projectRepository;

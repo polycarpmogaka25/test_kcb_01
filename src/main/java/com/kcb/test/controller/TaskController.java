@@ -2,7 +2,7 @@ package com.kcb.test.controller;
 
 import com.kcb.test.dto.CreateTaskRequest;
 import com.kcb.test.entity.Task;
-import com.kcb.test.service.TaskService;
+import com.kcb.test.service.impl.TaskServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Task Management", description = "Operations for modifying or removing existing tasks")
 public class TaskController {
 
-    private final TaskService taskService;
+    private final TaskServiceImpl taskService;
 
 
     @PutMapping("/{taskId}")

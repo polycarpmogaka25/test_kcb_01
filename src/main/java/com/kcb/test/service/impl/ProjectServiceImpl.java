@@ -1,4 +1,4 @@
-package com.kcb.test.service;
+package com.kcb.test.service.impl;
 
 import com.kcb.test.TaskStatus;
 import com.kcb.test.dto.CreateProjectRequest;
@@ -7,6 +7,7 @@ import com.kcb.test.entity.Project;
 import com.kcb.test.entity.Task;
 import com.kcb.test.exception.ResourceNotFoundException;
 import com.kcb.test.repository.ProjectRepository;
+import com.kcb.test.service.ServiceProject;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class ProjectService implements ServiceProject {
+public class ProjectServiceImpl implements ServiceProject {
 
     private final ProjectRepository projectRepository;
 
